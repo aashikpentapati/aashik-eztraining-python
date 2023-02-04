@@ -1,0 +1,123 @@
+PROJECT 1 :
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+WRITING A CODE FOR QUIZ GAME:
+
+
+q1="""what is the faithful animal?
+a.dog
+b.sheep
+c.cat
+d.parrot"""
+
+q2="""what is  best english series?
+a.wednesday
+b.stranger things
+c.after
+d.dark"""
+
+q3=""" what is the best film2022?
+a.rrr
+b.love today
+c.tiru
+d.krishna vrinda vihari"""
+
+q4=""" what is the best kdramas?
+a.my girl friend is an alien
+b.love2020
+c.love equations
+d.put u head on my shoulder"""
+
+q5="""who is the leader of janasena party?
+a.jagan
+b.pavan kalayan
+c.chandrababu naidu
+d.kcr"""
+
+questions={q1:"a",q2:"b",q3:"a",q4:"d",q5:"b"}
+
+name=input("hi whats ur name")
+print("hello",name,"welcome to te quiz")
+score=0
+for i in questions:
+    print()
+    print(i)
+    flag1=input("do you want to skip this question(yes/no)")
+    if flag1=="yes":
+        continue
+    ans=input("enter your answer")
+    if ans==questions[i]:
+        print("wow!you gotone point")
+        score=score+1
+        print("your current score is :",score)
+    else:
+        print("wrong answer,u lost 1 mark")
+        score=score-1
+        print("ur current score is",score)
+    flag2=input("do you want to quit? type(yes/no)")
+    if flag2=="yes":
+        break
+print("your total score is",score)
+
+SAMPLE O/P:
+
+hi whats ur name shivani
+hello  shivani welcome to te quiz
+
+what is the faithful animal?
+a.dog
+b.sheep
+c.cat
+d.parrot
+do you want to skip this question(yes/no)no
+enter your answera
+wow!you gotone point
+your current score is : 1
+do you want to quit? type(yes/no)no
+
+what is  best english series?
+a.wednesday
+b.stranger things
+c.after
+d.dark
+do you want to skip this question(yes/no)b
+enter your answer\b
+wow!you gotone point
+your current score is : 2
+do you want to quit? type(yes/no)no
+
+ what is the best film2022?
+a.rrr
+b.love today
+c.tiru
+d.krishna vrinda vihari
+do you want to skip this question(yes/no)no
+enter your answera
+wow!you gotone point
+your current score is : 3
+do you want to quit? type(yes/no)no'
+
+ what is the best kdramas?
+a.my girl friend is an alien
+b.love2020
+c.love equations
+d.put u head on my shoulder
+do you want to skip this question(yes/no)no
+enter your answera
+wrong answer,u lost 1 mark
+ur current score is 2
+do you want to quit? type(yes/no)no
+
+who is the leader of janasena party?
+a.jagan
+b.pavan kalayan
+c.chandrababu naidu
+d.kcr
+do you want to skip this question(yes/no)no
+enter your answerb
+wow!you gotone point
+your current score is : 3
+do you want to quit? type(yes/no)no
+your total score is 3
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
