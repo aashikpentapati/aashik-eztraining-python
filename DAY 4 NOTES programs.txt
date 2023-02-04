@@ -1,0 +1,174 @@
+DAY 4
+-------------------------------------------------------------------------------------------------------------------------------------------------
+d={n:n*n for n in range(1,5)}
+print(d)
+
+o/p:
+{1: 1, 2: 4, 3: 9, 4: 16}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#CALCULATING THE PRODUCT PRICE FOR 5 UNIT
+
+old={'rice':60,'dhaal':120,'oil':150}
+new={product:price*5 for (product,price) in old.items()}
+print(new)
+
+o/p:
+{'rice': 300, 'dhaal': 600, 'oil': 750}
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+#WITH CHECKS
+
+real={"shrihan":35,"dev":22,"arjun":18}
+now={name:age for(name,age) in real.items() if age>20}
+print(now)
+
+O/P:
+
+{'shrihan': 35, 'dev': 22}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#CREATE A LIST WITH 8 CUSTOMER NAMES AND DISPLAY THE DICTIONARY WHICH HAS CUMTOMERS NAMES ALONG WTH DISCOUNTS FOR THEM FROM A PRATICULAR SHOP
+
+import random
+customer={"satya","satish","swetha","rajesh","sanjana","vamsi","mouli","shivani"}
+customer_dict={names:random.randint(1,100) for names in customer}
+print(customer_dict)
+
+o/p:
+{'mouli': 79, 'vamsi': 35, 'satya': 93, 'sanjana': 11, 'swetha': 29, 'satish': 28, 'shivani': 76, 'rajesh': 33}
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#keysthroughtuple
+
+l1={'a','b','c'}
+l2={1,2,3}
+d={a:b for (a,b) in zip(l1,l2)}
+print(d)
+
+O/P:
+{'b': 1, 'a': 2, 'c': 3}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#PERCENTAGE
+
+l1=["preethi","kutti","pari"]
+l2=[450,490,456]
+per=[]
+for i in l2:
+  p=(i/500)*100
+  per.append(p)
+new={student:percentage for (student,percentage) in zip(l1,per)}
+print(new)
+
+O/P:
+
+{'preethi': 90.0, 'kutti': 98.0, 'pari': 91.2}
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+#STRINGS
+
+str="hi i'am "shivani""
+SyntaxError: invalid syntax
+
+str="hi,everyone"
+str
+'hi,everyone'
+
+str='heloo world'
+str
+'heloo world'
+
+
+print('a'>'b')
+False
+print('a'<'b')
+True
+max("abc")
+'c'
+min("abc")
+'a'
+
+#STRINGFUNTIONS
+
+s="GoodBye"
+s
+'GoodBye'
+
+s.upper()
+'GOODBYE'
+
+s.lower()
+'goodbye'
+
+s.capitalize()
+'Goodbye'
+
+s.replace('e','i')
+'GoodByi'
+
+s.strip()
+'GoodBye'
+
+s.split('d')
+['Goo', 'Bye']
+
+s.count('a')
+0
+s.count('o')
+2
+
+
+s.count('a',5,len(s))
+0
+s.endswith('e',0,len(s))
+True
+s.find('B',0,len(s))
+4
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#vowels
+
+
+l=['a','e','i','o','u']
+s=input("enter a string")
+count=0
+for i in l:
+  for j in s:
+      if i==j:
+        count=count+1
+print(count)
+
+O/P:
+enter a string everything goes wrong
+6
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+# using import function
+
+import math
+print("CEIL 12.5:",math.ceil(12.5))
+print("FLOOR 12.5:",math.floor(12.5))
+print("SQRT 345:",math.sqrt(345))
+print("FACTORIAL 3:",math.factorial(3))
+print("POWER 2,3:",math.pow(2,3))
+print("REMAINDER 10,3:",math.fmod(10,3))
+a,b=divmod(10,3)
+print(a,b)
+
+O/P:
+CEIL 12.5: 13
+FLOOR 12.5: 12
+SQRT 345: 18.57417562100671
+FACTORIAL 3: 6
+POWER 2,3: 8.0
+REMAINDER 10,3: 1.0
+3 1
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
